@@ -1,0 +1,883 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/assets/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "normalize";
+
+//variables
+$font-stack-1: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+$font-stack-2: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-color-0: #000;
+$font-color-1: #fff;
+$font-color-2: #004a59;
+$font-color-3: #3694a7;
+$font-color-4: #7a7575;
+$font-color-5: #ff6146;
+$font-color-6: #469cae;
+$font-color-7: #998e88;
+$font-color-8: #827873;
+$font-color-9: #80726b;
+
+
+$bg-color-main: #f3614c;
+$bg-color-accent: #202020;
+
+.txt-color-active{
+	color: #f3514c;
+} 
+
+* {
+	@include box-sizing(border-box);
+}
+
+a {
+	text-decoration: none;
+}
+
+figure {
+	position: relative;
+}
+//utilities 
+
+// @mixin clearfix() {
+// 	&:before,
+// 	&:after {
+// 	    content: " "; /* 1 */
+// 	    display: table; /* 2 */
+// 	}
+
+// 	&:after {
+// 	    clear: both;
+// 	}
+
+// }
+
+.cf:before,
+.cf:after {
+   content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.wrapper {
+	position: relative;
+	width: 1080px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+//reused classes 
+
+.callToAction {
+	padding: 10px 0 0 0;
+	p {
+		position: absolute;
+		top: 20px;
+		left: 70px;
+	}
+}
+
+.sectionTitle {
+	width: 700px;
+	border-top: 1px dashed #000;
+	border-bottom: 1px dashed #000;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-family: $font-stack-1;
+	h2 {
+		text-transform: capitalize;
+		font-size: 48px;
+		font-weight: 300;
+	}
+	p {
+		color: $font-color-9;
+		font-size: 24px;
+		padding: 0 65px;
+		font-weight: 300;
+	}
+}
+
+.twoColumn {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 675px;
+	text-align: center;
+	h1 {
+		font-size: 60px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 24px;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.threeColumn {
+	position: relative;
+	display: block;
+	width: 100%;
+	figure {
+		text-align: left;
+		float: left;
+		margin: 0;
+		width: 32%;
+	}
+}
+
+.middleColumn {
+	margin: 0 2% !important;
+}
+
+.arrow-lg {
+	width: 400px;
+	height: 50px;
+	background-color: #ffcd0f;
+	position: relative;
+	margin: 0 auto;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 25px;
+		border-color: transparent transparent transparent #f3614c;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -25px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 25px;
+		border-color: transparent transparent transparent #ffcd0f;
+	}
+}
+
+.arrow-prove {
+	width: 140px;
+	height: 50px;
+	background-color: #ffcd0f;
+	position: relative;
+	margin: 0 auto;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 25px;
+		border-color: transparent transparent transparent #9ccbaa;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -25px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 25px;
+		border-color: transparent transparent transparent #ffcd0f;
+	}
+}
+
+.arrow-sm {
+	width: 140px;
+	height: 50px;
+	background-color: #ffcd0f;
+	position: relative;
+	margin: 0 auto;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 25px;
+		border-color: transparent transparent transparent #fff;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: -25px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 25px;
+		border-color: transparent transparent transparent #ffcd0f;
+	}
+}
+
+
+//header 
+
+header {
+	position: relative;
+	height: 355px;
+	background-color: $bg-color-main;
+	h1 {
+		font-family: $font-stack-1;
+	}
+	p {
+		font-family: $font-stack-1;
+		color: $font-color-1;
+	}
+}
+
+.porky {
+	position: relative;
+	margin-bottom: 45px;
+	margin-left: 75px;
+	margin-right: 130px;
+}
+
+nav {
+
+	ul {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		background-color: #202020;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		margin-top: -2px;
+		z-index: 999999999;
+		font-family: $font-stack-2;
+		a {
+			position: relative;
+			padding: 18px;
+			color: $font-color-1;
+		}
+	}
+
+	li {
+		display: inline-block;
+		height: 100%;
+		width: 145px;
+		list-style: none;
+		text-align: center;
+		text-transform: uppercase;
+		border-left: 1px dashed #fff;
+		padding-top: 18px;
+		&:hover a{
+		color: #f3614c;
+		}
+		&:last-child {
+		border-right: 1px dashed #fff;	
+		}
+	}
+}
+
+
+.looneyTune {
+	position: absolute;
+	margin-bottom: -80px;
+	top: 2px;
+	left: -35px
+}
+
+.cta1 p {
+	left: 145px;
+	color: $font-color-0;
+}
+
+//work section 
+
+#work{
+	//@inculde clearfix();
+	margin-top: 60px;
+	figure:hover .zappos {
+		background: url(../img/zappos2.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	figure:hover .del-val {
+		background: url(../img/del-val2.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	figure:hover .monotype {
+		background: url(../img/monotype2.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}
+
+.zappos {
+	background-image: url(../img/zappos.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 231px;
+}
+
+.del-val {
+	background-image: url(../img/del-val.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 231px;
+}
+
+.monotype {
+	background-image: url(../img/monotype.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 231px;
+}
+
+.MTV {
+	background-color: #9ccbaa;
+	margin-bottom: 30px;
+	 h2 {
+		font-size: 48px;
+		line-height: 48px;
+		margin: 20px;
+	}
+	p:first-child {
+		padding-top: 55px;
+		margin-bottom: 0;
+	}
+}
+
+.mtvLogo {
+	position: relative;
+	margin-bottom: 160px;
+}
+
+.smallTitle {
+	&:before {
+		content: "– "
+	}
+	&:after {
+		content: " –"
+	}
+}
+
+.mtvColumn {
+	width: 450px;
+	padding: 0;
+	margin-left: 185px;
+	color: $font-color-0;
+	font-family: $font-stack-1;
+	font-weight: 300;
+	p {
+		padding: 0;
+		font-size: 18px;
+		line-height: 30px;
+		&:first-of-type {
+			color: $font-color-1;
+		}
+		&:nth-of-type(2) {
+			font-family: $font-stack-2;
+			// color: $font-color-0;
+		}
+	}	
+}
+
+.cta2 p{
+		top: -35px;
+		left: 167px;
+		font-family: $font-stack-1;
+		color: $font-color-0 !important;
+		font-size: 20px;
+}
+
+.threeclg {
+	figcaption{
+		background-color: #f9fafa;
+		border: 1px solid #e5e7e6;
+		width: 97%;
+		margin: 0 auto;
+		font-family: $font-stack-2;
+	}
+	figure:hover  figcaption{
+		border: 1px solid transparent;
+		background-color: transparent;
+	}
+	h3 {
+		font-size: 20px;
+		margin-bottom: 0;
+		padding-left: 25px;
+		color: $font-color-2;
+		font-family: $font-stack-1;
+	}
+	p {
+		font-size: 14px;
+		padding: 25px 25px 40px 25px;
+		line-height: 28px;
+		margin: 0;
+		color: $font-color-0;	
+	}
+} 
+
+.showMore {
+	position: relative;
+	display: block;
+	width: 415px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 45px;
+	margin-bottom: 100px;
+	padding-top: 15px;
+	background-color: #ffce10;
+	font-weight: bold;
+	font-size: 20px;
+	a {
+		color: $font-color-0;
+	}
+}
+
+
+//news section 
+
+#news h3 {
+	font-size: 24px;
+	text-align: left;
+}
+
+.summit {
+	width: 48%;
+	float: left;
+	margin: 0;
+	margin-right: 35px;
+}
+
+.webby {
+	float: left;
+	width: 48%;
+	margin: 1px 0 0 0;
+	figcaption {
+		margin-bottom: 45px;
+	}
+}
+
+.summit,
+.webby {
+	text-align: left;
+	h3 {
+		font-family: $font-stack-1;
+		color: $font-color-3;
+	}
+	p {
+		font-size: 18px;
+		line-height: 28px;
+		font-family: $font-stack-2;
+	}
+	a {
+		color: $font-color-0;
+		font-weight: 500;
+	}
+}
+
+	
+
+.threeCsm  {
+	 width: 48%;
+	 display: inline-block;
+	 font-family: $font-stack-1;
+	 a {
+	 	font-weight: 600;
+	 	color: $font-color-3;
+	 }
+}
+
+.cta3 p{
+	top: 5px;
+	left: 50px;
+	font-size: 18px;
+	font-family: $font-stack-1;
+	color: $font-color-0;
+}
+
+
+//blog section 
+
+.blogPost { 
+	h2 {
+		text-align: left;
+		font-size: 32px;
+		font-family: $font-stack-1;
+		color: $font-color-3;
+	}
+	p{
+		text-align: left;
+		font-size: 14px;
+		line-height: 28px;
+		font-weight: normal;
+		font-family: $font-stack-2;
+		color: $font-color-0;
+	}
+}
+.teachLearn {
+	padding-bottom: 110px;
+	margin-right: 75px;
+	margin-left: -150px;
+}
+
+.blogColumn {
+	width: 450px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.cta4 {
+	margin-left: -300px;
+	p{
+		top: 20px;
+		left: 315px;
+		font-size: 16px;
+	}
+}
+
+.recentArticles {
+	h3 {
+		font-size: 18px;
+		text-align: left;
+		text-transform: uppercase;
+		font-family: $font-stack-1;
+	}
+	h4 {
+		font-size: 24px;
+		margin: 25px 0 20px 0;
+		font-family: $font-stack-1;
+		color: $font-color-2;
+	}
+	p {
+		font-size: 14px;
+		font-family: $font-stack-2;
+		color: $font-color-4;
+	}
+}
+
+// about section 
+
+.topParagraph {
+	width: 335px;
+	font-size: 20px !important;
+	font-weight: normal !important;
+	line-height: 30px !important;
+	text-align: left;
+	font-family: $font-stack-1 !important;
+	color: $font-color-5;
+}
+
+#about {
+	p {
+		width: 335px;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: left;
+		margin-right: 45px;
+		font-family: $font-stack-2;
+		&:nth-child(3) {
+			position: absolute;
+			top: 205px;
+			left: 380px;
+		}
+		&:nth-child(4) {
+			position: absolute;
+			top: 460px;
+			left: 380px;
+		}
+	}	
+	img {
+		position: absolute;
+		top: 205px;
+		right: 0;
+	}
+} 
+
+//network section 
+
+.networkColumn {
+	margin-top: 50px;
+	figure {
+		text-align: center;
+		padding: 0 15px;
+		&:first-child {
+			margin-left: 40px;
+		}
+		&:nth-child(2) {
+			margin-top: -10px;
+		}
+		&:last-child {
+			margin-top: -10px;
+		}
+	}	
+	p{
+		font-family: $font-stack-1;
+	}
+}
+
+//contact section 
+
+.getInTouch {
+	width: 140px;
+	height: 30px;
+	padding: 0 5px	;
+	background-color: #ffcd0f;
+	font-size: 24px;
+	a {
+		color: $font-color-0;
+	}
+	
+}
+
+#contact {
+	h4 {
+		font-size: 22px;
+		font-family: $font-stack-1;
+	}
+	figcaption p:nth-child(4) {
+		text-transform: uppercase;
+		color: $font-color-7;
+	}
+}
+
+.spacer {
+	margin-top: 45px;
+}
+
+.mapColumn {
+	h3 {
+		font-family: $font-stack-1;
+		color: $font-color-6;
+	}
+	p {
+		font-size: 12px;
+		font-weight: 400;
+		font-family: $font-stack-2;
+	}
+}
+
+
+//footer
+
+
+footer {
+	position: relative;
+	display: block;
+	height: 600px;
+	margin-top: 60px;
+	background-color: $bg-color-main;
+}
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+.social {
+	margin-top: 40px;
+	font-family: $font-stack-2;
+	p {
+		display: inline;
+		text-transform: uppercase;
+	}
+	a {
+		color: $font-color-0;
+	}
+}
+
+.icon-twitter-circled,
+.icon-facebook-circled {
+	display: inline-block;
+	font-size: 18px;
+	color: $font-color-1;
+}
+
+
+form {
+	display: inline-block;
+	position: relative;
+	background-color: #fff;
+	height: 130px;
+	width: 345px;
+	margin-top: 70px;
+	margin-left: 40px;
+	border-radius: 12px;
+	font-style: italic;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.inputField {
+	padding-top: 25px;
+}
+
+.footerColumn {
+	width: 1080px;
+	font-family: $font-stack-1;
+}
+
+input {
+	width: 225px;
+	height: 40px;
+	border-radius: 6px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+button {
+	background-color: #ffcd10;
+	height: 40px;
+	width: 40px;
+	font-size: 24px;
+	display: inline-block;
+	border: none;
+	vertical-align: bottom;
+	border-radius: 6px
+}
+
+.ctaFooter {
+	position: relative;
+	display: inline-block;
+	margin-top: 95px;
+	p{
+		left: 60px;
+	}
+	a {
+		color: $font-color-0;
+	}
+	figcaption {
+		padding-bottom: 15px;
+	}
+
+}
+
+.closer {
+	font-family: $font-stack-1;
+	h2{
+		font-size: 48px;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+	h3 {
+		font-size: 30px;
+		font-weight: 400;
+		margin-top: 15px;
+		color: $font-color-1;
+	}
+}
+
+
+.footerFooter {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 14px;
+	background-color: #202020;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: $font-color-8;
+	font-family: $font-stack-2;
+}
+
+.copyright {
+	margin-top: 0;
+}
+
+.hosting {
+	margin-top: 15px;
+
+}
+
+.hosting p {
+	display: inline-block;
+	vertical-align: 140%;
+}
+
+.big {
+	font-size: 36px;
+	vertical-align: middle;
+}
+
+
+//icon fonts
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?38989636');
+  src: url('../font/fontello.eot?38989636#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?38989636') format('woff'),
+       url('../font/fontello.ttf?38989636') format('truetype'),
+       url('../font/fontello.svg?38989636#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?38989636#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-twitter-circled:before { content: '\e800'; } /* '' */
+.icon-facebook-circled:before { content: '\e801'; } /* '' */
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1185 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/* line 20, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 40, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 48, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/* line 11, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 19, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a {
+  background: transparent;
+}
+
+/* line 16, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 16, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 29, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 36, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 43, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 57, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 61, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+img {
+  border: 0;
+}
+
+/* line 15, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 15, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 23, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/* line 19, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 27, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button {
+  overflow: visible;
+}
+
+/* line 37, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 50, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 58, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 65, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 73, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input {
+  line-height: normal;
+}
+
+/* line 84, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 94, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 102, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 114, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 120, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 129, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 136, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 143, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/* line 9, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 15, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "colaboratelightregular";
+  src: url('../fonts/colablight/colablig-webfont.eot');
+  src: url('../fonts/colablight/colablig-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colablight/colablig-webfont.woff') format('woff'), url('../fonts/colablight/colablig-webfont.ttf') format('truetype'), url('../fonts/colablight/colablig-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "colaborate-mediumregular";
+  src: url('../fonts/colabmed/colabmed-webfont.eot');
+  src: url('../fonts/colabmed/colabmed-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colabmed/colabmed-webfont.woff') format('woff'), url('../fonts/colabmed/colabmed-webfont.ttf') format('truetype'), url('../fonts/colabmed/colabmed-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "colaborate-regularregular";
+  src: url('../fonts/colabreg/colabreg-webfont.eot');
+  src: url('../fonts/colabreg/colabreg-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/colabreg/colabreg-webfont.woff') format('woff'), url('../fonts/colabreg/colabreg-webfont.ttf') format('truetype'), url('../fonts/colabreg/colabreg-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "chunkfiveroman";
+  src: url('../fonts/chunkFive/chunkfive-webfont.eot');
+  src: url('../fonts/chunkFive/chunkfive-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/chunkFive/chunkfive-webfont.woff') format('woff'), url('../fonts/chunkFive/chunkfive-webfont.ttf') format('truetype'), url('../fonts/chunkFive/chunkfive-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "alexandriaflfregular";
+  src: url('../fonts/alexandriaflf/alexandriaflf-webfont.eot');
+  src: url('../fonts/alexandriaflf/alexandriaflf-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf/alexandriaflf-webfont.woff') format('woff'), url('../fonts/alexandriaflf/alexandriaflf-webfont.ttf') format('truetype'), url('../fonts/alexandriaflf/alexandriaflf-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "alexandriaflfbold";
+  src: url('../fonts/alexandriaflf/alexandriaflf-bold-webfont.eot');
+  src: url('../fonts/alexandriaflf/alexandriaflf-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/alexandriaflf/alexandriaflf-bold-webfont.woff') format('woff'), url('../fonts/alexandriaflf/alexandriaflf-bold-webfont.ttf') format('truetype'), url('../fonts/alexandriaflf/alexandriaflf-bold-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "contraregular";
+  src: url('../fonts/contra/contra__-webfont.eot');
+  src: url('../fonts/contra/contra__-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/contra/contra__-webfont.woff') format('woff'), url('../fonts/contra/contra__-webfont.ttf') format('truetype'), url('../fonts/contra/contra__-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "contraitalic";
+  src: url('../fonts/contra-italic/contrai_-webfont.eot');
+  src: url('../fonts/contra-italic/contrai_-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/contra-italic/contrai_-webfont.woff') format('woff'), url('../fonts/contra-italic/contrai_-webfont.ttf') format('truetype'), url('../fonts/contra-italic/contrai_-webfont.svg') format('svg');
+}
+
+/* line 57, ../../sass/screen.scss */
+.hidden {
+  visibility: hidden;
+}
+
+/* line 61, ../../sass/screen.scss */
+.none {
+  display: none;
+}
+
+/* line 65, ../../sass/screen.scss */
+.sheen {
+  position: absolute;
+  top: 200px;
+  left: 245px;
+  /*opacity: 0;*/
+}
+
+/* line 73, ../../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 77, ../../sass/screen.scss */
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 83, ../../sass/screen.scss */
+figure {
+  width: 31%;
+  display: inline-block;
+  margin: 0;
+  margin-right: 1.5%;
+}
+/* line 88, ../../sass/screen.scss */
+figure h2 {
+  display: inline-block;
+  font-family: colaboratelightregular;
+  color: #505050;
+}
+/* line 93, ../../sass/screen.scss */
+figure p:nth-child(3) {
+  font-size: 15px;
+  margin-top: -20px;
+  margin-left: 40px;
+  font-family: colaboratelightregular;
+  color: #5f7390;
+}
+
+/* line 102, ../../sass/screen.scss */
+figcaption p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 19px;
+  font-family: colaboratelightregular;
+  color: #505050;
+}
+
+/* line 114, ../../sass/screen.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 119, ../../sass/screen.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 123, ../../sass/screen.scss */
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 130, ../../sass/screen.scss */
+.btn {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #6e9ad8;
+  border-radius: 6px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #2d6bc2), color-stop(1, #174284));
+  background-image: -o-linear-gradient(bottom, #2d6bc2 50%, #174284 100%);
+  background-image: -moz-linear-gradient(bottom, #2d6bc2 50%, #174284 100%);
+  background-image: -webkit-linear-gradient(bottom, #2d6bc2 50%, #174284 100%);
+  background-image: -ms-linear-gradient(bottom, #2d6bc2 50%, #174284 100%);
+  background-image: linear-gradient(to bottom, #2d6bc2 50%, #174284 100%);
+}
+
+/* line 151, ../../sass/screen.scss */
+a:hover .btn {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1, #2d6bc2), color-stop(0.5, #174284));
+  background-image: -o-linear-gradient(bottom, #2d6bc2 100%, #174284 50%);
+  background-image: -moz-linear-gradient(bottom, #2d6bc2 100%, #174284 50%);
+  background-image: -webkit-linear-gradient(bottom, #2d6bc2 100%, #174284 50%);
+  background-image: -ms-linear-gradient(bottom, #2d6bc2 100%, #174284 50%);
+  background-image: linear-gradient(to bottom, #2d6bc2 100%, #174284 50%);
+}
+
+/* line 168, ../../sass/screen.scss */
+header {
+  background-color: #1b1b2d;
+}
+
+/* line 173, ../../sass/screen.scss */
+h1 {
+  display: inline-block;
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 10px;
+  vertical-align: bottom;
+}
+
+/* line 182, ../../sass/screen.scss */
+nav ul {
+  display: inline-block;
+  padding-left: 110px;
+  margin-top: 0;
+  font-family: colaboratelightregular;
+}
+/* line 188, ../../sass/screen.scss */
+nav li {
+  display: inline-block;
+  padding: 8px 7px;
+}
+/* line 192, ../../sass/screen.scss */
+nav a {
+  padding: 8px 10px;
+  color: #d7d7e3;
+}
+/* line 195, ../../sass/screen.scss */
+nav a:hover {
+  color: #1b1b2d;
+  background-color: #d7d7e3;
+  border-radius: 6px;
+}
+
+/* line 205, ../../sass/screen.scss */
+.hero {
+  padding-top: 70px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25, #1b1b2d), color-stop(1, #d4d5d8));
+  background-image: -o-linear-gradient(bottom, #1b1b2d 25%, #d4d5d8 100%);
+  background-image: -moz-linear-gradient(bottom, #1b1b2d 25%, #d4d5d8 100%);
+  background-image: -webkit-linear-gradient(bottom, #1b1b2d 25%, #d4d5d8 100%);
+  background-image: -ms-linear-gradient(bottom, #1b1b2d 25%, #d4d5d8 100%);
+  background-image: linear-gradient(to bottom, #1b1b2d 25%, #d4d5d8 100%);
+}
+
+/* line 221, ../../sass/screen.scss */
+.left-arrow {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(49, 49, 65, 0.5);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 85px;
+  margin-left: -20px;
+}
+/* line 230, ../../sass/screen.scss */
+.left-arrow:after {
+  content: "◀";
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 20px;
+  color: #f8f8f8;
+}
+
+/* line 240, ../../sass/screen.scss */
+.right-arrow {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(49, 49, 65, 0.5);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 85px;
+  margin-left: 110px;
+}
+/* line 249, ../../sass/screen.scss */
+.right-arrow:after {
+  content: "▶";
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 20px;
+  color: #f8f8f8;
+}
+
+/* line 259, ../../sass/screen.scss */
+.left-col {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  margin-right: 3.5%;
+  text-align: right;
+}
+/* line 265, ../../sass/screen.scss */
+.left-col h2 {
+  font-size: 45px;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-family: colaborate-regularregular;
+  color: #e7e8ea;
+}
+/* line 273, ../../sass/screen.scss */
+.left-col h3 {
+  font-size: 39px;
+  line-height: 52px;
+  margin: 0;
+  font-family: alexandriaflfregular;
+  color: white;
+  font-weight: 100;
+}
+/* line 280, ../../sass/screen.scss */
+.left-col h3 span {
+  font-family: alexandriaflfbold;
+}
+/* line 284, ../../sass/screen.scss */
+.left-col p {
+  display: inline-block;
+  font-size: 23px;
+  width: 170px;
+  font-family: colaboratelightregular;
+  color: #e7e8ea;
+}
+/* line 291, ../../sass/screen.scss */
+.left-col a {
+  font-family: colaborate-mediumregular;
+  color: white;
+}
+
+/* line 298, ../../sass/screen.scss */
+.read-btn {
+  width: 180px;
+  height: 45px;
+  padding-top: 8px;
+  font-size: 23px;
+}
+/* line 303, ../../sass/screen.scss */
+.read-btn:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 5px;
+  width: 180px;
+  height: 10px;
+  background: transparent;
+  /*Without a color, the box shadows fails*/
+  border-radius: 100px / 5px;
+  box-shadow: 0 30px 5px #888892;
+}
+
+/* line 316, ../../sass/screen.scss */
+.ipadImg {
+  position: relative;
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+}
+/* line 322, ../../sass/screen.scss */
+.ipadImg img:last-child {
+  margin-top: -30px;
+}
+
+/* line 330, ../../sass/screen.scss */
+.second {
+  padding-bottom: 45px;
+  background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0.25, #d4d5d9), color-stop(1, #e7e8ea));
+  background-image: -o-linear-gradient(bottom, #d4d5d9 25%, #e7e8ea 100%);
+  background-image: -moz-linear-gradient(bottom, #d4d5d9 25%, #e7e8ea 100%);
+  background-image: -webkit-linear-gradient(bottom, #d4d5d9 25%, #e7e8ea 100%);
+  background-image: -ms-linear-gradient(bottom, #d4d5d9 25%, #e7e8ea 100%);
+  background-image: linear-gradient(to bottom, #d4d5d9 25%, #e7e8ea 100%);
+}
+/* line 345, ../../sass/screen.scss */
+.second figure:first-of-type {
+  margin-left: 1.5%;
+}
+
+/* line 350, ../../sass/screen.scss */
+.apps {
+  padding: 0;
+}
+
+/* line 356, ../../sass/screen.scss */
+.icon-help-circled,
+.icon-globe,
+.icon-wrench {
+  height: 35px;
+  width: 35px;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 6px;
+  padding-top: 3px;
+  display: inline-block;
+  vertical-align: -33%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #767676), color-stop(0.5, #b6b6b6));
+  background-image: -o-linear-gradient(top, #767676 0%, #b6b6b6 50%);
+  background-image: -moz-linear-gradient(top, #767676 0%, #b6b6b6 50%);
+  background-image: -webkit-linear-gradient(top, #767676 0%, #b6b6b6 50%);
+  background-image: -ms-linear-gradient(top, #767676 0%, #b6b6b6 50%);
+  background-image: linear-gradient(to top, #767676 0%, #b6b6b6 50%);
+}
+
+/* line 380, ../../sass/screen.scss */
+.second-slider {
+  position: relative;
+  width: 67.5%;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid #dcddde;
+  border-bottom: 1px solid #dcddde;
+  background: #e7e8ea;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #e7e8ea 0%, #eaebed 50%, #eaebed 51%, #e7e8ea 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #e7e8ea), color-stop(50%, #eaebed), color-stop(51%, #eaebed), color-stop(100%, #e7e8ea));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #e7e8ea 0%, #eaebed 50%, #eaebed 51%, #e7e8ea 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #e7e8ea 0%, #eaebed 50%, #eaebed 51%, #e7e8ea 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #e7e8ea 0%, #eaebed 50%, #eaebed 51%, #e7e8ea 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #e7e8ea 0%, #eaebed 50%, #eaebed 51%, #e7e8ea 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e8ea', endColorstr='#e7e8ea',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+/* line 397, ../../sass/screen.scss */
+.second-slider p {
+  display: inline-block;
+  width: 57%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 25px;
+  vertical-align: middle;
+  padding: 20px 0;
+  font-family: alexandriaflfbold;
+  color: #828181;
+}
+/* line 408, ../../sass/screen.scss */
+.second-slider a {
+  color: #5f7390;
+}
+
+/* line 413, ../../sass/screen.scss */
+.second-left-arrow {
+  display: inline-block;
+  margin-right: 40px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: #d3d4d5;
+}
+/* line 422, ../../sass/screen.scss */
+.second-left-arrow:after {
+  content: "➤";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 431, ../../sass/screen.scss */
+.second-right-arrow {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  color: #d3d4d5;
+}
+/* line 436, ../../sass/screen.scss */
+.second-right-arrow:after {
+  content: "➤";
+}
+
+/* line 443, ../../sass/screen.scss */
+.second-right-arrow,
+.second-left-arrow {
+  font-size: 20px;
+}
+
+/* line 450, ../../sass/screen.scss */
+.third {
+  text-align: center;
+  padding-bottom: 35px;
+  margin-top: -27px;
+  background-color: #e7e8ea;
+}
+/* line 455, ../../sass/screen.scss */
+.third img {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 459, ../../sass/screen.scss */
+.third ul {
+  display: inline-block;
+  text-align: left;
+  font-family: colaboratelightregular;
+  color: #828181;
+}
+/* line 465, ../../sass/screen.scss */
+.third li {
+  list-style-type: none;
+  font-size: 15px;
+  text-align: left;
+  line-height: 30px;
+}
+
+/* line 473, ../../sass/screen.scss */
+.third-title {
+  width: 42%;
+}
+/* line 475, ../../sass/screen.scss */
+.third-title h3 {
+  font-size: 27px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: colaboratelightregular;
+  color: #505050;
+}
+/* line 482, ../../sass/screen.scss */
+.third-title p {
+  font-size: 15px;
+  margin-top: 0;
+  margin-left: 45px;
+  padding-top: 0;
+  text-align: left;
+  font-family: colaboratelightregular;
+  color: #5f7390;
+}
+
+/* line 495, ../../sass/screen.scss */
+.first-list li:before {
+  content: '▶';
+  font-size: 6px;
+  padding: 5px;
+  color: #828181;
+  background-color: #e3e2e2;
+  border: 1px solid #d1d1d2;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* line 506, ../../sass/screen.scss */
+.third-buttons {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-size: 19px;
+}
+/* line 511, ../../sass/screen.scss */
+.third-buttons div {
+  padding: 10px 25px;
+  margin-right: 25px;
+  font-family: contraregular;
+  color: white;
+}
+
+/* line 521, ../../sass/screen.scss */
+.second-list {
+  margin-left: -60px;
+  padding-left: 0;
+}
+/* line 524, ../../sass/screen.scss */
+.second-list li {
+  border-top: 1px solid #d7d8da;
+}
+/* line 526, ../../sass/screen.scss */
+.second-list li:last-child {
+  border-bottom: 1px solid #d7d8da;
+}
+/* line 529, ../../sass/screen.scss */
+.second-list li:before {
+  content: '+';
+  font-size: 12px;
+  padding: 1px 4px;
+  color: #828181;
+  background-color: #e3e2e2;
+  border: 1px solid #d1d1d2;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* line 544, ../../sass/screen.scss */
+footer {
+  background: #54546a;
+  background: -moz-radial-gradient(center, ellipse cover, #54546a 50%, #363647 99%, #363647 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%, #54546a), color-stop(99%, #363647), color-stop(100%, #363647));
+  background: -webkit-radial-gradient(center, ellipse cover, #54546a 50%, #363647 99%, #363647 100%);
+  background: -o-radial-gradient(center, ellipse cover, #54546a 50%, #363647 99%, #363647 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #54546a 50%, #363647 99%, #363647 100%);
+  background: radial-gradient(ellipse at center, #54546a 50%, #363647 99%, #363647 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54546a', endColorstr='#363647', GradientType=1 );
+}
+
+/* line 555, ../../sass/screen.scss */
+.twitter {
+  position: relative;
+  border-bottom: 1px solid #59596c;
+  padding-top: 15px;
+}
+/* line 559, ../../sass/screen.scss */
+.twitter div {
+  display: inline-block;
+  margin-left: 75px;
+  vertical-align: middle;
+}
+/* line 564, ../../sass/screen.scss */
+.twitter p {
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 0;
+  padding-left: 40px;
+  font-size: 13px;
+  margin-bottom: 0;
+  font-family: alexandriaflfbold;
+  color: white;
+}
+/* line 573, ../../sass/screen.scss */
+.twitter p:nth-of-type(2) {
+  position: absolute;
+  top: 45px;
+  right: 25px;
+  font-size: 15px;
+  text-align: right;
+  margin-top: 0;
+  font-family: contraitalic;
+}
+
+/* line 585, ../../sass/screen.scss */
+.icon-twitter-bird {
+  height: 65px;
+  width: 65px;
+  font-size: 45px;
+  color: #353546;
+  padding-top: 5px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+/* line 596, ../../sass/screen.scss */
+.column {
+  width: 50%;
+  float: left;
+  font-family: colaboratelightregular;
+  color: white;
+}
+/* line 601, ../../sass/screen.scss */
+.column h3 {
+  font-size: 25px;
+}
+
+/* line 608, ../../sass/screen.scss */
+input[type="submit"] {
+  padding: 5px 16px;
+  color: #363648;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  vertical-align: middle;
+  font-family: colaboratelightregular;
+  background-color: #e7e8ea;
+}
+
+/* line 619, ../../sass/screen.scss */
+input[type="email"] {
+  text-align: center;
+  height: 25px;
+  width: 215px;
+  margin-right: 15px;
+  background-color: #242439;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: inset -1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 632, ../../sass/screen.scss */
+input[type="text"] {
+  text-align: center;
+  height: 25px;
+  width: 215px;
+  margin-top: 10px;
+  background-color: #242439;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: inset -1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 645, ../../sass/screen.scss */
+.bigger input[type="text"] {
+  height: 95px;
+  margin-bottom: 15px;
+}
+
+/* line 650, ../../sass/screen.scss */
+.right input[type="submit"] {
+  float: right;
+  margin-right: 35px;
+}
+
+/* line 655, ../../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #d7d7e3;
+}
+
+/* line 659, ../../sass/screen.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #d7d7e3;
+}
+
+/* line 663, ../../sass/screen.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #d7d7e3;
+}
+
+/* line 667, ../../sass/screen.scss */
+:-ms-input-placeholder {
+  color: #d7d7e3;
+}
+
+/* line 671, ../../sass/screen.scss */
+.social {
+  margin-top: 20px;
+}
+
+/* line 677, ../../sass/screen.scss */
+.left p {
+  width: 345px;
+  margin-bottom: 20px;
+}
+
+/* line 684, ../../sass/screen.scss */
+.social > a > .icon-twitter-bird,
+.icon-facebook,
+.icon-linkedin {
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  color: #6d6d84;
+  background-color: #464659;
+  border: none;
+  border-radius: 50%;
+  padding-left: 3px;
+  display: inline-block;
+}
+
+/* line 699, ../../sass/screen.scss */
+.icon-facebook,
+.icon-linkedin {
+  padding-top: 5px;
+  margin-left: 15px;
+}
+
+/* line 704, ../../sass/screen.scss */
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: relative;
+  font-family: colaboratelightregular;
+  color: white;
+}
+
+/*
+font icons 
+====================================
+*/
+@font-face {
+  font-family: 'dublin-apps-1';
+  src: url("../fonts/font-icons-1/font/dublin-apps-1.eot?50975977");
+  src: url("../fonts/font-icons-1/font/dublin-apps-1.eot?50975977#iefix") format("embedded-opentype"), url("../fonts/font-icons-1/font/dublin-apps-1.woff?50975977") format("woff"), url("../fonts/font-icons-1/font/dublin-apps-1.ttf?50975977") format("truetype"), url("../fonts/font-icons-1/font/dublin-apps-1.svg?50975977#dublin-apps-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'dublin-apps-1';
+    src: url('../font/dublin-apps-1.svg?50975977#dublin-apps-1') format('svg');
+  }
+}
+*/
+/* line 757, ../../sass/screen.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "dublin-apps-1";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 788, ../../sass/screen.scss */
+.icon-help-circled:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 789, ../../sass/screen.scss */
+.icon-globe:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 790, ../../sass/screen.scss */
+.icon-wrench:before {
+  content: '\e802';
+}
+
+/* '' */
+@font-face {
+  font-family: 'dublin-apps-twitter';
+  src: url("../fonts/font-icons-twitter/font/dublin-apps-twitter.eot?37172538");
+  src: url("../fonts/font-icons-twitter/font/dublin-apps-twitter.eot?37172538#iefix") format("embedded-opentype"), url("../fonts/font-icons-twitter/font/dublin-apps-twitter.woff?37172538") format("woff"), url("../fonts/font-icons-twitter/font/dublin-apps-twitter.ttf?37172538") format("truetype"), url("../fonts/font-icons-twitter/font/dublin-apps-twitter.svg?37172538#dublin-apps-twitter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'dublin-apps-twitter';
+    src: url('../font/dublin-apps-twitter.svg?37172538#dublin-apps-twitter') format('svg');
+  }
+}
+*/
+/* line 814, ../../sass/screen.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "dublin-apps-twitter";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 845, ../../sass/screen.scss */
+.icon-twitter-bird:before {
+  content: '\e800';
+}
+
+/* '' */
+@font-face {
+  font-family: 'dublin-apps-social';
+  src: url("../fonts/font-icons-social/font/dublin-apps-social.eot?81601085");
+  src: url("../fonts/font-icons-social/font/dublin-apps-social.eot?81601085#iefix") format("embedded-opentype"), url("../fonts/font-icons-social/font/dublin-apps-social.woff?81601085") format("woff"), url("../fonts/font-icons-social/font/dublin-apps-social.ttf?81601085") format("truetype"), url("../fonts/font-icons-social/font/dublin-apps-social.svg?81601085#dublin-apps-social") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'dublin-apps-social';
+    src: url('../font/dublin-apps-social.svg?81601085#dublin-apps-social') format('svg');
+  }
+}
+*/
+/* line 869, ../../sass/screen.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "dublin-apps-social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 900, ../../sass/screen.scss */
+.icon-facebook:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 901, ../../sass/screen.scss */
+.icon-linkedin:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 902, ../../sass/screen.scss */
+.icon-twitter-bird:before {
+  content: '\e802';
+}
+
+/* '' */
