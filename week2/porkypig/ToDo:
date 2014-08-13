@@ -1,0 +1,39 @@
+ToDo:
+
+
+
+
+ 
+
+
+Done:
+
+Arrow banners: you want to build these out using CSS and not images. That way it's easier to maintain, change colors, etc....
+
+Very creative implementation of the back to top looney logo. Keep in mind you could've kept it as an inline list item and placed in the image, or a bg image. But what you did works. You could use a hover color on the primary nav.
+
+Also, twitter and facebook icons should be icon fonts, not images.
+
+Good job on the product tiles hover state... most people missed that. There is a pixel shift on the hover state though, that's because of the border going away on hover. Rather than remove it, just set it to color of white. then its not visible and no pixel shifting
+
+In primary nav, instead of doing li:nth-child(7), use li:last-child. That way you an add in navigation items f you need to.
+
+move scripts to bottom of page 
+
+Also, work on removing the button border and setting it up rounded corners etc..
+
+Check out the HTML5 spec for built-in browser form validation. apply the email validator to your input field.
+
+For colors, think about a system where you assign each different color as a class, rather than have colors all throughout your css file. How would you have to achieve this?
+
+Grids: much of this site uses a 3 column grid layout. What you want to do is, rather than placing hard coded pixel widths on each column, and reuse a 3 col grid system, set to % widths. Then just let the width on a parent container be fixed pixel if it needs to be. 
+
+
+Try to just use pixel width values of main parent / wrapper containers, and all children as %'s. That way you can easiy change page dimensions, and everything will update in relative proportion.
+
+
+
+
+
+
+
