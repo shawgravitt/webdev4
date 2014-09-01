@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" data-ng-app="customerApp">
+    <head>
+        <meta charset="utf-8">
+        <title>streetArt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+    
+    <header data-ng-controller="artistController">
+        <h1>Street Artists</h1>
+        <span ng-bind-template="{{date | date: 'EEEE, MMMM d, yyyy, h:m:ss a' }}"
+                class="date"></span>
+    </header>
+    
+
+
+    <div 
+        class="container" 
+        data-ng-init="names =['Blu', 'Os Gemeos', 'JR', 'ROA', 'Banksy', 'Escif', 'Sam3', 'Vhils', 'Interesni Kazki', 'Boxi', 'Evol', 'Ericailcane','Claudio Ethos', 'Aakash Nihalani', 'Space Invader']" >
+
+        <h2>15 of the Greatest Street Artist right now</h2>
+        <form>
+            <fieldset>
+                <label for="">
+                        Name
+                </label>
+                <input type="text" data-ng-model="nameText"/>
+                <p data-ng-bind-template="{{nameText}}"></p>
+            </fieldset>
+            </form>
+        <ul>
+            <li
+                data-ng-repeat="firstName in names | filter: nameText"
+                data-ng-bind-template="{{$index + 1}}: {{firstName}}">
+            </li>
+        </ul>
+    </div>
+
+    <div class="container artwork" 
+            data-ng-controller="artistController"
+            data-ng-cloak="">
+            <h2>Artwork</h2>
+            <p>Click the image to get more information.</p>
+            <figure data-ng-repeat="artist in streetArtists" 
+                    data-ng-click="artistClick(artist.name, artist.country)">
+                <img data-ng-src="{{artist.imgUrl}}" alt="">
+
+            </figure>
+            
+            
+            <div class="bubble"
+                data-ng-hide="!artistName"
+                data-ng-bind-template="By: {{artistName}}, From: {{artistCountry}}">
+            </div>
+
+    </div> 
+
+
+
+
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/angular/angular.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

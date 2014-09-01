@@ -1,0 +1,74 @@
+// bower:scss
+// endbower
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .date {
+        display: block;
+        font-style: italic;
+        font-size: 80%;
+    }
+}
+
+
+
+.container {
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: left;
+        color: #666;
+    }
+    .bubble {
+        position: fixed;
+        right: 2.5%;
+        top: 60%;
+        border: solid 2px #f60;
+        background: #123456;
+        color: #ccc;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    ul {
+        border: 1px solid #666;
+        height: 90px;
+        overflow: scroll;
+        width: 75%;
+        margin: 0 auto;
+    }
+    li {
+        list-style: none;
+        
+    }
+}
+
+fieldset {
+    margin: 20px auto;
+    width: 76%;
+}
+
+.artwork {
+    figure {
+        margin: 25px auto;
+        width: 60%;
+        img {
+            width: 100%;
+        }
+    }    
+    p {
+        text-align: center !important;
+    }
+    
+}
+
