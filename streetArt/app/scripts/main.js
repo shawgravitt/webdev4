@@ -2,7 +2,7 @@ console.log('\'Allo \'Allo!');
 
 var customerApp = angular.module('customerApp', []);
 
-customerApp.controller('artistController', function($scope){
+customerApp.controller('artistController', ['$scope', function($scope){
 
 	$scope.streetArtists = [
 		{
@@ -93,4 +93,4 @@ customerApp.controller('artistController', function($scope){
 		$scope.artistCountry = country;
 		
 	};
-});
+}]);

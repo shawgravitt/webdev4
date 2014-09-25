@@ -1,0 +1,122 @@
+  <div class="banner">
+      <div class="recipe--author">Chris Coyier's</div>
+      <div class="recipe--title">Four-Bean Chili</div>
+      
+      <div class="recipe--ingredient-preview hidden-xs" 
+      data-ng-class="{'{{image}}': true, 
+        'is-active': (image === ingredientImages[activeIngredient]) }"
+        data-ng-repeat="image in ingredientImages">
+      </div>
+
+
+
+  </div>
+    </div>
+    <div class="container-fluid">
+      <section class="row recipe--header">
+        <div class="col-sm-6 col-xs-5">
+          <span class="rating hidden-xs">
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star-empty"></span>
+          </span>
+          <span class="glyphicon glyphicon-time"></span>
+          1hr 20m
+        </div>
+        <div class="col-sm-6 col-xs-7">
+          <div class="recipe--servings">
+            <input type="text" data-ng-model="servings"/>
+            <span class="glyphicon glyphicon-cutlery"></span>
+          </div>
+          <span class="glyphicon glyphicon-minus"
+                data-ng-click="downServing()">
+            
+          </span>
+          <span class="glyphicon glyphicon-plus"
+                data-ng-click="upServing()">
+              
+          </span>
+        </div>
+      </section>
+      <section class="row recipe--body">
+        <div class="col-sm-6 col-sm-push-6">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-2 col-xs-11 col-xs-offset-1">
+              <h3>Ingredients</h3>
+              <ul>
+            
+                <li class="recipe--ingredient">        
+                <!-- repeat all ingredients -->
+                <!-- add click event to toggle 'added' state -->
+                <!-- toggle 'checked' class name -->              
+                  <span class="glyphicon">
+                    <!-- toggle checked and unchecked class names -->
+                  </span>
+
+                  
+                  <span class="recipe--amount">
+                    <!-- show only if ingredient is not a fraction-->
+                    <!-- bind to ingredient amount -->
+                  </span>
+
+
+                  <span class="fraction"
+                    data-ng-if="ingredient.hasFraction">
+                    <!-- show only if ingredient is a fraction -->
+                    <!-- show numerator and denominator -->
+                   
+                  </span>
+
+                  <span class="recipe--unit">
+                    <!-- list ingredient unit -->
+                  </span>
+                  <span>
+                    <!-- list ingredient name -->
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-sm-pull-6">
+          <div class="row">
+            <div class="col-xs-11 col-xs-offset-1">
+              <h3>Directions</h3>
+              <ol class="recipe--directions">
+                <li>
+                  <!-- repeat for all directions -->
+                  <!-- toggle completed class for each direction -->
+                  <!-- add click event to toggle completed state -->
+
+               
+               
+                    <span>
+                      <!-- list direction step -->
+                    </span>
+                    <br>
+                     <div class="recipe--ingredient-preview">
+                      <!-- repeat for all images assoctiated with this direction -->
+                      <!-- set class for bg image -->
+                      <!-- toggle hidden class based on whether direction is completed or not -->
+                       
+                     </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- give thanks to the developer -->
+      <footer class="row">
+        <div class="col-xs-6">
+          Made in DC by
+          <a href='https://twitter.com/jan_rubio' target='_blank'> @jan_rubio</a>
+        </div>
+        <div class="col-xs-6 rodeo">
+          <a href='http://blog.codepen.io/rodeo/season-three' target='_blank'>
+            CodePen Pattern Rodeo #9</a>
+        </div>
+      </footer>
+    </div>
